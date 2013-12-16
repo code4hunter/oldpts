@@ -678,6 +678,10 @@ object frmMain: TfrmMain
     object TabSheet2: TTabSheet
       Caption = #26410#25104#20132#22996#25176
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lvWorking: TListView
         Left = 0
         Top = 0
@@ -917,6 +921,10 @@ object frmMain: TfrmMain
     object TabSheet4: TTabSheet
       Caption = #25104#20132#27969#27700
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbQryCount: TLabel
         Left = 176
         Top = 8
@@ -928,11 +936,10 @@ object frmMain: TfrmMain
         Left = 698
         Top = 0
         Width = 6
-        Height = 30
+        Height = 12
         Align = alRight
         Alignment = taCenter
         Layout = tlCenter
-        ExplicitHeight = 12
       end
       object btStartQry: TButton
         Left = 3
@@ -1177,7 +1184,7 @@ object frmMain: TfrmMain
     Left = 88
     Top = 248
     Bitmap = {
-      494C010114007800780010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C0101140078007C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000006000000001002000000000000060
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

@@ -15,7 +15,7 @@ WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
      Application->Initialize();
      Application->Title = "Test Trade";
      Application->CreateForm(__classid(TfrmMain), &frmMain);
-         Application->Run();
+		Application->Run();
   }
   catch (Exception &exception)
   {

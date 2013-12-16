@@ -210,7 +210,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\common\BHCmnBase\UItfTrd.cpp"
+				RelativePath=".\UItfTrd2.cpp"
 				>
 			</File>
 		</Filter>
@@ -245,6 +245,10 @@
 			</File>
 			<File
 				RelativePath=".\Trader.h"
+				>
+			</File>
+			<File
+				RelativePath=".\UItfTrd2.h"
 				>
 			</File>
 		</Filter>

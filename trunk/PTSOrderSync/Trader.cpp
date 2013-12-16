@@ -365,12 +365,12 @@ Trader::checkConnect()
         else
             _isSyncCancelOrder = false;
                 
-        std::ostringstream os;
-        os << _acctInfo.host << ":" << _acctInfo.port;
-        if (_itftrd->Init(os.str().c_str()) != 0)
+        //std::ostringstream os;
+        //os << _acctInfo.host << ":" << _acctInfo.port;
+        if (_itftrd->Init(_acctInfo.host.c_str()) != 0)
         {
             Ice::Error out(_logger);
-            out << "Can not connect to trade server:" << os.str().c_str();
+            out << "Can not connect to trade server:" <<_acctInfo.host;
             return false;
         }
         

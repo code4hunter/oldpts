@@ -11,7 +11,7 @@
 #include <ComCtrls.hpp>
 #include <ImgList.hpp>
 
-#include "UItfTrd.h"
+#include "UItfTrd2.h"
 #include "HQPoolSvrLib_OCX.h"
 
 //---------------------------------------------------------------------------

@@ -6,7 +6,7 @@
 #include <Classes.hpp>
 //---------------------------------------------------------------------------
 
-#include "UItfTrd.h"
+#include "UItfTrd2.h"
 
 class TestThread : public TThread
 {            

@@ -7,7 +7,6 @@
 
 #include "uTestThread.h"
 #include "uMain.h"
-#include "UItfTrd.h"
 #include <stdio.h>
 #include <math.hpp>
 #pragma package(smart_init)
@@ -70,7 +69,7 @@ void __fastcall TestThread::Execute()
 	else
 	{
 
-		TItfTrd itf("PTrdDll_RM2.dll");
+		TItfTrd itf;
 
 		itf.Open();
 		if(itf.Init(AnsiString(frmMain->edSvr->Text).c_str())==0)

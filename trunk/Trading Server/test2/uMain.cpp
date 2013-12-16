@@ -15,7 +15,7 @@
 #pragma resource "*.dfm"
 TfrmMain *frmMain;
 
-TItfTrd itf("PTrdDll_RM2.dll");
+TItfTrd itf;
 
 std::map<std::string,TItfTrd*> _itfs;
 
@@ -1224,7 +1224,7 @@ void __fastcall TfrmMain::btLoadItfClick(TObject *Sender)
 			TItfTrd* ptrd = _itfs[acc.c_str()];
 
 			if( ptrd == NULL )
-				_itfs[acc.c_str()] = new TItfTrd("PTrdDll_RM2.dll");
+				_itfs[acc.c_str()] = new TItfTrd();
 
 			ptrd = _itfs[acc.c_str()];
 

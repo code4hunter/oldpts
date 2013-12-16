@@ -1,7 +1,7 @@
 #ifndef TRADEADAPTER_H
 #define TRADEADAPTER_H
 
-#include <BHCmnBase/UItfTrd.h>
+#include "UItfTrd2.h"
 #include <IceUtil/IceUtil.h>
 #include <list>
 #include <Database.h>
