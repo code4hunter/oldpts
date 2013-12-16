@@ -1,0 +1,21 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "ptsRF"
+   MSDTVersion = "80"
+   DefDBRef = "db\sql2005.ptsrf.dbo"
+   Begin Folder = "Change Scripts"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "ptsrf.dbo.dt_orders.SQL"
+      Script = "ptsrf.dbo.dt_ordreport.SQL"
+      Script = "Script1.SQL"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "db\sql2005.ptsrf.dbo"
+         ConnectStr = "Data Source=DB\SQL2005;Initial Catalog=ptsrf;User ID=sa"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+   End
+   Begin Folder = "Queries"
+   End
+End

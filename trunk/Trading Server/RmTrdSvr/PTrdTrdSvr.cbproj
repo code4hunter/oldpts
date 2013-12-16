@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{621df90e-8e1c-44c7-bc6f-1283f424c4be}</ProjectGuid>
+    <Config Condition="'$(Config)'==''">Release</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+    <Base>true</Base>
+    <Cfg_1>true</Cfg_1>
+    <CfgParent>Base</CfgParent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+    <Base>true</Base>
+    <Cfg_2>true</Cfg_2>
+    <CfgParent>Base</CfgParent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <OutputExt>dll</OutputExt>
+    <BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+    <Defines>PTRADEAPI_EXPORTS</Defines>
+    <BCC_InstructionSet>6</BCC_InstructionSet>
+    <ILINK_GenerateLibFile>true</ILINK_GenerateLibFile>
+    <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
+    <DCC_DebugInformation>false</DCC_DebugInformation>
+    <ILINK_ObjectSearchPath>G:\PTS\trunk\Trading Server\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</ILINK_ObjectSearchPath>
+    <ProjectType>VCppStyleDll</ProjectType>
+    <BCC_ZeroLengthEmptyMemberFuncs>true</BCC_ZeroLengthEmptyMemberFuncs>
+    <DCC_MakeModifiedUnits>true</DCC_MakeModifiedUnits>
+    <FinalOutputDir>..\..\Bin\Trading Server\</FinalOutputDir>
+    <PackageImports>vcl.bpi;rtl.bpi;bcbie.bpi;vclx.bpi;vclactnband.bpi;xmlrtl.bpi;bcbsmp.bpi;dbrtl.bpi;vcldb.bpi;vcldbx.bpi;bdertl.bpi;dsnap.bpi;dsnapcon.bpi;vclib.bpi;ibxpress.bpi;adortl.bpi;dbxcds.bpi;dbexpress.bpi;DbxCommonDriver.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;inet.bpi;IntrawebDB_90_100.bpi;Intraweb_90_100.bpi;VclSmp.bpi;vclie.bpi;websnap.bpi;webdsnap.bpi;inetdbbde.bpi;inetdbxpress.bpi;soaprtl.bpi;RaizeComponentsVcl.bpi;RaizeComponentsVclDb.bpi;TeeWorld811.bpi;TeeImage811.bpi;TeeLanguage811.bpi;TeePro811.bpi;TeeGL811.bpi;TeeUI811.bpi;TeeDB811.bpi;Tee811.bpi;snow.bpi</PackageImports>
+    <TASM_AdditionalSwitches> /w2</TASM_AdditionalSwitches>
+    <DCC_UnitSearchPath>.\;$(BDS)\lib;$(BDS)\lib\obj</DCC_UnitSearchPath>
+    <BRCC_UserSuppliedOptions> -I$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl</BRCC_UserSuppliedOptions>
+    <IncludePath>G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</IncludePath>
+    <AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;adortl.lib</AllPackageLibs>
+    <BCC_IncludePath>$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl;G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources</BCC_IncludePath>
+    <TASM_IncludePath>$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl</TASM_IncludePath>
+    <BRCC_IncludePath>$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl</BRCC_IncludePath>
+    <DCC_IncludePath>.\;$(BDS)\lib;$(BDS)\lib\obj;..\..\ExpressDataController\Sources;..\..\ExpressEditors Library 5\Sources;..\..\ExpressExport Library\Sources;..\..\ExpressGDI+ Library\Sources;..\..\ExpressLibrary\Sources;..\..\ExpressPageControl 2\Sources;..\..\ExpressQuantumGrid 6\Sources;..\..\ExpressQuantumTreeList 4\Sources;..\..\ExpressVerticalGrid\Sources;..\Sources</DCC_IncludePath>
+    <BCC_ZeroLengthEmptyBaseClass>true</BCC_ZeroLengthEmptyBaseClass>
+    <ILINK_LibraryPath>$(BCB)\lib\obj;$(BCB)\lib;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</ILINK_LibraryPath>
+    <Multithreaded>true</Multithreaded>
+    <BCC_Defines>NO_STRICT</BCC_Defines>
+    <BRCC_Defines>_RTLDLL;NO_STRICT;USEPACKAGES</BRCC_Defines>
+    <TASM_Defines>_RTLDLL;NO_STRICT;USEPACKAGES</TASM_Defines>
+    <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+    <TASM_Debugging>None</TASM_Debugging>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Cfg_1)'!=''">
+    <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+    <DCC_Optimize>false</DCC_Optimize>
+    <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+    <Defines>_DEBUG;NO_STRICT;$(Defines)</Defines>
+    <ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+    <BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+    <ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
+    <DCC_DebugInformation>true</DCC_DebugInformation>
+    <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    <BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+    <IntermediateOutputDir>Debug_Build</IntermediateOutputDir>
+    <TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+    <BCC_StackFrames>true</BCC_StackFrames>
+    <IncludePath>G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;$(IncludePath)</IncludePath>
+    <BCC_IntegerSizedEnums>true</BCC_IntegerSizedEnums>
+    <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+    <ILINK_LibraryPath>$(BCB)\lib\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+    <BCC_Defines>_DEBUG;$(BCC_Defines)</BCC_Defines>
+    <TASM_Debugging>Full</TASM_Debugging>
+    <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Cfg_2)'!=''">
+    <IntermediateOutputDir>Release_Build</IntermediateOutputDir>
+    <DCC_IncludePath>G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;$(DCC_IncludePath)</DCC_IncludePath>
+    <ILINK_LibraryPath>$(BCB)\lib\release;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+    <BCC_Defines>NDEBUG;$(BCC_Defines)</BCC_Defines>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality</Borland.Personality>
+    <Borland.ProjectType>VCppStyleDll</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><CPlusPlusBuilder.Personality><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">3</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">2052</VersionInfo><VersionInfo Name="CodePage">936</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">BOHONG FUND</VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">3.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">3.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Debugging><Debugging Name="DebugSourceDirs"></Debugging></Debugging><Parameters><Parameters Name="RunParams"></Parameters><Parameters Name="Launcher"></Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="DebugCWD"></Parameters><Parameters Name="HostApplication">..\..\bin\Trading Server\BHTrdSvr.exe</Parameters><Parameters Name="RemoteHost"></Parameters><Parameters Name="RemotePath"></Parameters><Parameters Name="RemoteParams"></Parameters><Parameters Name="RemoteLauncher"></Parameters><Parameters Name="UseRemoteLauncher">False</Parameters><Parameters Name="RemoteCWD"></Parameters><Parameters Name="RemoteDebug">False</Parameters><Parameters Name="Debug Symbols Search Path"></Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><Linker><Linker Name="LibPrefix"></Linker><Linker Name="LibSuffix"></Linker><Linker Name="LibVersion"></Linker></Linker><ProjectProperties><ProjectProperties Name="AutoShowDeps">False</ProjectProperties><ProjectProperties Name="ManagePaths">True</ProjectProperties><ProjectProperties Name="VerifyPackages">True</ProjectProperties></ProjectProperties><HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Count">4</HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Item0">G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Item1">G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Item2">G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;G:\PTS\trunk\Trading Server\RmTrdSvr;..\..\common\BHCmnBase;..\Trade</HistoryLists_hlIncludePath><HistoryLists_hlIncludePath Name="Item3">G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources;G:\PTS\trunk\Trading Server\RmTrdSvr;..\..\common\BHCmnBase;..\Trade</HistoryLists_hlIncludePath></HistoryLists_hlIncludePath><HistoryLists_hlFinalOutputDir><HistoryLists_hlFinalOutputDir Name="Count">2</HistoryLists_hlFinalOutputDir><HistoryLists_hlFinalOutputDir Name="Item0">..\..\Bin\Trading Server\</HistoryLists_hlFinalOutputDir><HistoryLists_hlFinalOutputDir Name="Item1">.</HistoryLists_hlFinalOutputDir></HistoryLists_hlFinalOutputDir><HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_LibraryPath Name="Count">3</HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_LibraryPath Name="Item0">$(BCB)\lib\release;$(BCB)\lib\obj;$(BCB)\lib;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_LibraryPath Name="Item1">$(BCB)\lib\obj;$(BCB)\lib;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_LibraryPath Name="Item2">$(BCB)\lib\debug;$(BCB)\lib\obj;$(BCB)\lib;..\RmTrdSvr;..\..\common\BHCmnBase;..\Trade;..\..\common\BHCmnBase\mylib</HistoryLists_hlILINK_LibraryPath></HistoryLists_hlILINK_LibraryPath><HistoryLists_hlILINK_MaxErrors><HistoryLists_hlILINK_MaxErrors Name="Count">1</HistoryLists_hlILINK_MaxErrors><HistoryLists_hlILINK_MaxErrors Name="Item0">0</HistoryLists_hlILINK_MaxErrors></HistoryLists_hlILINK_MaxErrors><HistoryLists_hlILINK_FileAlignment><HistoryLists_hlILINK_FileAlignment Name="Count">1</HistoryLists_hlILINK_FileAlignment><HistoryLists_hlILINK_FileAlignment Name="Item0">0x200</HistoryLists_hlILINK_FileAlignment></HistoryLists_hlILINK_FileAlignment><HistoryLists_hlILINK_ObjectAlignment><HistoryLists_hlILINK_ObjectAlignment Name="Count">1</HistoryLists_hlILINK_ObjectAlignment><HistoryLists_hlILINK_ObjectAlignment Name="Item0">4096</HistoryLists_hlILINK_ObjectAlignment></HistoryLists_hlILINK_ObjectAlignment><HistoryLists_hlBCC_MaxIdentifierLength><HistoryLists_hlBCC_MaxIdentifierLength Name="Count">1</HistoryLists_hlBCC_MaxIdentifierLength><HistoryLists_hlBCC_MaxIdentifierLength Name="Item0">250</HistoryLists_hlBCC_MaxIdentifierLength></HistoryLists_hlBCC_MaxIdentifierLength><HistoryLists_hlBCC_IncludePath><HistoryLists_hlBCC_IncludePath Name="Count">1</HistoryLists_hlBCC_IncludePath><HistoryLists_hlBCC_IncludePath Name="Item0">$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl;G:\vcl\DevExpress2008\ExpressDataController\Sources;G:\vcl\DevExpress2008\ExpressEditors Library 5\Sources;G:\vcl\DevExpress2008\ExpressExport Library\Sources;G:\vcl\DevExpress2008\ExpressGDI+ Library\Sources;G:\vcl\DevExpress2008\ExpressLibrary\Sources;G:\vcl\DevExpress2008\ExpressPageControl 2\Sources;G:\vcl\DevExpress2008\ExpressQuantumGrid 6\Sources;G:\vcl\DevExpress2008\ExpressQuantumTreeList 4\Sources;G:\vcl\DevExpress2008\ExpressVerticalGrid\Sources;G:\vcl\DevExpress2008\XP Theme Manager\Sources</HistoryLists_hlBCC_IncludePath></HistoryLists_hlBCC_IncludePath><HistoryLists_hlBCC_Defines><HistoryLists_hlBCC_Defines Name="Count">1</HistoryLists_hlBCC_Defines><HistoryLists_hlBCC_Defines Name="Item0">_DEBUG;NO_STRICT</HistoryLists_hlBCC_Defines></HistoryLists_hlBCC_Defines><HistoryLists_hlIntermediateOutputDir><HistoryLists_hlIntermediateOutputDir Name="Count">2</HistoryLists_hlIntermediateOutputDir><HistoryLists_hlIntermediateOutputDir Name="Item0">Release_Build</HistoryLists_hlIntermediateOutputDir><HistoryLists_hlIntermediateOutputDir Name="Item1">Debug_Build</HistoryLists_hlIntermediateOutputDir></HistoryLists_hlIntermediateOutputDir><HistoryLists_hlDCC_IncludePath><HistoryLists_hlDCC_IncludePath Name="Count">1</HistoryLists_hlDCC_IncludePath><HistoryLists_hlDCC_IncludePath Name="Item0">.\;$(BDS)\lib;$(BDS)\lib\obj;..\..\ExpressDataController\Sources;..\..\ExpressEditors Library 5\Sources;..\..\ExpressExport Library\Sources;..\..\ExpressGDI+ Library\Sources;..\..\ExpressLibrary\Sources;..\..\ExpressPageControl 2\Sources;..\..\ExpressQuantumGrid 6\Sources;..\..\ExpressQuantumTreeList 4\Sources;..\..\ExpressVerticalGrid\Sources;..\Sources</HistoryLists_hlDCC_IncludePath></HistoryLists_hlDCC_IncludePath><HistoryLists_hlDCC_Define><HistoryLists_hlDCC_Define Name="Count">1</HistoryLists_hlDCC_Define><HistoryLists_hlDCC_Define Name="Item0">DEBUG</HistoryLists_hlDCC_Define></HistoryLists_hlDCC_Define><HistoryLists_hlILINK_BaseAddress><HistoryLists_hlILINK_BaseAddress Name="Count">1</HistoryLists_hlILINK_BaseAddress><HistoryLists_hlILINK_BaseAddress Name="Item0">0x00400000</HistoryLists_hlILINK_BaseAddress></HistoryLists_hlILINK_BaseAddress><HistoryLists_hlILINK_HeapCommitSize><HistoryLists_hlILINK_HeapCommitSize Name="Count">1</HistoryLists_hlILINK_HeapCommitSize><HistoryLists_hlILINK_HeapCommitSize Name="Item0">0x00001000</HistoryLists_hlILINK_HeapCommitSize></HistoryLists_hlILINK_HeapCommitSize><HistoryLists_hlILINK_HeapReserveSize><HistoryLists_hlILINK_HeapReserveSize Name="Count">1</HistoryLists_hlILINK_HeapReserveSize><HistoryLists_hlILINK_HeapReserveSize Name="Item0">0x00100000</HistoryLists_hlILINK_HeapReserveSize></HistoryLists_hlILINK_HeapReserveSize><HistoryLists_hlILINK_StackCommitSize><HistoryLists_hlILINK_StackCommitSize Name="Count">1</HistoryLists_hlILINK_StackCommitSize><HistoryLists_hlILINK_StackCommitSize Name="Item0">0x00002000</HistoryLists_hlILINK_StackCommitSize></HistoryLists_hlILINK_StackCommitSize><HistoryLists_hlILINK_StackReserveSize><HistoryLists_hlILINK_StackReserveSize Name="Count">1</HistoryLists_hlILINK_StackReserveSize><HistoryLists_hlILINK_StackReserveSize Name="Item0">0x00100000</HistoryLists_hlILINK_StackReserveSize></HistoryLists_hlILINK_StackReserveSize><HistoryLists_hlDefines><HistoryLists_hlDefines Name="Count">2</HistoryLists_hlDefines><HistoryLists_hlDefines Name="Item0">PTRADEAPI_EXPORTS</HistoryLists_hlDefines><HistoryLists_hlDefines Name="Item1">_DEBUG;NO_STRICT;PTRADEAPI_EXPORTS</HistoryLists_hlDefines></HistoryLists_hlDefines><HistoryLists_hlDCC_CodePage><HistoryLists_hlDCC_CodePage Name="Count">1</HistoryLists_hlDCC_CodePage><HistoryLists_hlDCC_CodePage Name="Item0">0</HistoryLists_hlDCC_CodePage></HistoryLists_hlDCC_CodePage><HistoryLists_hlBRCC_IncludePath><HistoryLists_hlBRCC_IncludePath Name="Count">1</HistoryLists_hlBRCC_IncludePath><HistoryLists_hlBRCC_IncludePath Name="Item0">$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl</HistoryLists_hlBRCC_IncludePath></HistoryLists_hlBRCC_IncludePath><HistoryLists_hlBRCC_Defines><HistoryLists_hlBRCC_Defines Name="Count">1</HistoryLists_hlBRCC_Defines><HistoryLists_hlBRCC_Defines Name="Item0">_RTLDLL;NO_STRICT;USEPACKAGES</HistoryLists_hlBRCC_Defines></HistoryLists_hlBRCC_Defines><HistoryLists_hlTASM_IncludePath><HistoryLists_hlTASM_IncludePath Name="Count">1</HistoryLists_hlTASM_IncludePath><HistoryLists_hlTASM_IncludePath Name="Item0">$(SEARCHPATH);$(LIBDIR);$(BCB)\include;$(BCB)\include\vcl</HistoryLists_hlTASM_IncludePath></HistoryLists_hlTASM_IncludePath><HistoryLists_hlTASM_Defines><HistoryLists_hlTASM_Defines Name="Count">1</HistoryLists_hlTASM_Defines><HistoryLists_hlTASM_Defines Name="Item0">_RTLDLL;NO_STRICT;USEPACKAGES</HistoryLists_hlTASM_Defines></HistoryLists_hlTASM_Defines></CPlusPlusBuilder.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Cpp.Targets" />
+  <ItemGroup>
+    <CppCompile Include="..\..\common\BHCmnBase\DebugStr.cpp">
+      <BuildOrder>2</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="..\..\common\BHCmnBase\mylib\VERSINFO.CPP">
+      <BuildOrder>3</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="..\..\common\BHCmnBase\UItfTrd.cpp">
+      <DependentOn>..\..\common\BHCmnBase\UItfTrd.h</DependentOn>
+      <BuildOrder>1</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="..\..\common\BHCmnBase\UItfTrd1.0.cpp">
+      <BuildOrder>4</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="..\Trade\UTrdItfBase.cpp">
+      <DependentOn>..\Trade\UTrdItfBase.h</DependentOn>
+      <BuildOrder>6</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="uAtuoQry.cpp">
+      <DependentOn>uAtuoQry.h</DependentOn>
+      <BuildOrder>10</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="uDmPTSRF.cpp">
+      <Form>DataModule1</Form>
+      <DesignClass>TDataModule</DesignClass>
+      <DependentOn>uDmPTSRF.h</DependentOn>
+      <BuildOrder>9</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="uItfTrdTrdSvr.cpp">
+      <DependentOn>uItfTrdTrdSvr.h</DependentOn>
+      <BuildOrder>5</BuildOrder>
+    </CppCompile>
+    <CppCompile Include="uMain.cpp">
+      <BuildOrder>0</BuildOrder>
+    </CppCompile>
+    <None Include="..\Plugin read me.txt">
+      <BuildOrder>7</BuildOrder>
+    </None>
+    <ResFiles Include="PTrdTrdSvr.res">
+      <BuildOrder>8</BuildOrder>
+    </ResFiles>
+    <FormResources Include="uDmPTSRF.dfm" />
+    <BuildConfiguration Include="Debug">
+      <Key>Cfg_1</Key>
+    </BuildConfiguration>
+    <BuildConfiguration Include="Release">
+      <Key>Cfg_2</Key>
+    </BuildConfiguration>
+  </ItemGroup>
+</Project>

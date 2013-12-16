@@ -1,0 +1,203 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{3A5A5AA5-7930-45ad-A2D8-28355F16BA5E}</ProjectGuid>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Release</Config>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<FinalOutputDir>..\..\Bin\Trading Server\</FinalOutputDir>
+			<LinkPackageStatics>rtl.lib;vcl.lib;IndyCore.lib;IndySystem.lib</LinkPackageStatics>
+			<BCC_IncludePath>C:\Program Files\ZeroC\Ice-3.4.1\include;./;$(BCC_IncludePath)</BCC_IncludePath>
+			<PackageImports>vcl.bpi;rtl.bpi;bcbie.bpi;vclx.bpi;vclactnband.bpi;xmlrtl.bpi;bcbsmp.bpi;vclimg.bpi;dbrtl.bpi;vcldb.bpi;vcldbx.bpi;bdertl.bpi;vcltouch.bpi;dsnap.bpi;dsnapcon.bpi;adortl.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;VclSmp.bpi;vclie.bpi;inet.bpi;inetdbbde.bpi;inetdbxpress.bpi;dbexpress.bpi;DbxCommonDriver.bpi;DataSnapIndy10ServerTransport.bpi;DataSnapProviderClient.bpi;inetdb.bpi;DbxClientDriver.bpi;DataSnapServer.bpi;DBXInterBaseDriver.bpi;DBXMySQLDriver.bpi;dbxcds.bpi;DBXFirebirdDriver.bpi;DBXSybaseASEDriver.bpi;DBXSybaseASADriver.bpi;DBXOracleDriver.bpi;DBXMSSQLDriver.bpi;DBXInformixDriver.bpi;DBXDb2Driver.bpi;dxCoreD14.bpi;cxLibraryD14.bpi;dxmdsD14.bpi;dxDockingD14.bpi;cxEditorsD14.bpi;cxExtEditorsD14.bpi;cxPageControlD14.bpi;dxLayoutControlD14.bpi;dxsbD14.bpi;dxComnD14.bpi;dxNavBarD14.bpi;cxGridD14.bpi;cxPivotGridD14.bpi;cxPivotGridChartD14.bpi;cxPivotGridOLAPD14.bpi;cxSchedulerD14.bpi;cxSchedulerGridD14.bpi;dxFlowChartD14.bpi;dxorgcD14.bpi;dxdborD14.bpi;cxVerticalGridD14.bpi;cxSpreadSheetD14.bpi;dxBarD14.bpi;cxBarEditItemD14.bpi;dxRibbonD14.bpi;dxBarExtItemsD14.bpi;dxBarExtDBItemsD14.bpi;dxBarDBNavD14.bpi;dxdbtrD14.bpi;cxTreeListD14.bpi;cxTreeListdxBarPopupMenuD14.bpi;dxSkinXmas2008BlueD14.bpi;dxSkinsCoreD14.bpi;dxSkinValentineD14.bpi;dxSkinStardustD14.bpi;dxSkinSilverD14.bpi;dxSkinsdxRibbonPainterD14.bpi;dxSkinsdxNavBar2PainterD14.bpi;dxSkinsdxDLPainterD14.bpi;dxSkinsdxBarPainterD14.bpi;dxSkinscxScheduler3PainterD14.bpi;dxSkinscxPCPainterD14.bpi;dxSkinOffice2007SilverD14.bpi;dxSkinOffice2007PinkD14.bpi;dxSkinOffice2007GreenD14.bpi;dxSkinOffice2007BlueD14.bpi;dxSkinOffice2007BlackD14.bpi;dxSkinMoneyTwinsD14.bpi;dxSkinMcSkinD14.bpi;dxSkinLondonLiquidSkyD14.bpi;dxSkinLiquidSkyD14.bpi;dxSkinLilianD14.bpi;dxSkiniMaginaryD14.bpi;dxSkinGlassOceansD14.bpi;dxSkinCoffeeD14.bpi;dxSkinSummer2008D14.bpi;dxSkinCaramelD14.bpi;dxSkinBlueD14.bpi;dxSkinBlackD14.bpi;dxSkinDarkSideD14.bpi;dxSkinPumpkinD14.bpi;dxSkinSpringTimeD14.bpi;dxSkinDarkRoomD14.bpi;dxSkinFoggyD14.bpi;dxSkinSevenD14.bpi;dxSkinSharpD14.bpi;dcldxSkinsCoreD14.bpi;dxSpellCheckerD14.bpi;RaizeComponentsVcl.bpi;RaizeComponentsVclDb.bpi;TeeWorld814.bpi;TeeImage814.bpi;TeeLanguage814.bpi;TeePro814.bpi;TeeGL814.bpi;TeeUI814.bpi;TeeDB814.bpi;Tee814.bpi;myactivex.bpi;StrategySvcWrapper.bpi;BCBCtrlPkg.bpi</PackageImports>
+			<Multithreaded>true</Multithreaded>
+			<Defines>PTRADEAPI_EXPORTS;$(Defines)</Defines>
+			<OutputExt>dll</OutputExt>
+			<AllPackageLibs>rtl.lib;vcl.lib;IndyCore.lib;IndySystem.lib</AllPackageLibs>
+			<ProjectType>CppDynamicLibrary</ProjectType>
+			<ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<IncludePath>..\..\common\sqllite3\;..\Trade\;..\com\;..\..\common\BHCmnBase\mylib\;..\..\common\BHCmnBase\;win32api\;..\HSStkV3.3\;E:\pts2\trunk\Trading Server\SQJSFuture\;$(CG_BOOST_ROOT)\boost\tr1\tr1;$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\vcl;$(CG_BOOST_ROOT);..\..\common\libiconv-1.9.1\include;$(IncludePath)</IncludePath>
+			<ILINK_LibraryPath>..\..\common\libiconv-1.9.1\lib;..\..\common\sqllite3\;..\Trade\;..\com\;..\..\common\BHCmnBase\mylib\;..\..\common\BHCmnBase\;win32api\;..\HSStkV3.3\;E:\pts2\trunk\Trading Server\SQJSFuture\;$(BDS)\lib\obj;..\..\common\libiconv\lib;$(BDS)\lib\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<BCC_wpar>false</BCC_wpar>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+			<BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<Defines>_DEBUG;$(Defines)</Defines>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<IntermediateOutputDir>Debug</IntermediateOutputDir>
+			<BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+			<DCC_Define>DEBUG</DCC_Define>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<BCC_StackFrames>true</BCC_StackFrames>
+			<ILINK_LibraryPath>$(BDS)\lib\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<ILINK_AdditionalOptions>charset-bcb.lib iconv-bcb.lib</ILINK_AdditionalOptions>
+			<BCC_InstructionSet>6</BCC_InstructionSet>
+			<Defines>NDEBUG;$(Defines)</Defines>
+			<IntermediateOutputDir>Release</IntermediateOutputDir>
+			<ILINK_LibraryPath>$(BDS)\lib\release;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<TASM_Debugging>None</TASM_Debugging>
+		</PropertyGroup>
+		<ItemGroup>
+			<CppCompile Include="..\..\common\BHCmnBase\DebugStr.cpp">
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
+			<None Include="..\Trade\UTrdItfAPI.h">
+				<BuildOrder>12</BuildOrder>
+			</None>
+			<CppCompile Include="uFrmIndy.cpp">
+				<Form>Form1</Form>
+				<DependentOn>uFrmIndy.h</DependentOn>
+				<BuildOrder>15</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="uTrdItfImp.cpp">
+				<DependentOn>uTrdItfImp.h</DependentOn>
+				<BuildOrder>1</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="uDatabase.cpp">
+				<DependentOn>uDatabase.h</DependentOn>
+				<BuildOrder>13</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="..\com\uSpliter.cpp">
+				<DependentOn>..\com\uSpliter.h</DependentOn>
+				<BuildOrder>9</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="uField.cpp">
+				<DependentOn>uField.h</DependentOn>
+				<BuildOrder>16</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="..\Trade\UTrdItfBase.cpp">
+				<DependentOn>..\Trade\UTrdItfBase.h</DependentOn>
+				<BuildOrder>11</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="..\..\common\BHCmnBase\mylib\VERSINFO.CPP">
+				<BuildOrder>8</BuildOrder>
+			</CppCompile>
+			<ResFiles Include="PTrdGXSTD.res">
+				<BuildOrder>15</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="..\com\uPriceFunc.cpp">
+				<DependentOn>..\com\uPriceFunc.h</DependentOn>
+				<BuildOrder>10</BuildOrder>
+			</CppCompile>
+			<None Include="..\..\common\BHCmnBase\UTrdStruct.h">
+				<BuildOrder>6</BuildOrder>
+			</None>
+			<CppCompile Include="uMain.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="..\..\common\sqllite3\sqlite3.c">
+				<BuildOrder>14</BuildOrder>
+			</CppCompile>
+			<FormResources Include="uFrmIndy.dfm"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppDynamicLibrary</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">41</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">2052</VersionInfo>
+						<VersionInfo Name="CodePage">936</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">BoHongFund</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.41</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">by CodeHunter</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Debugging>
+						<Debugging Name="DebugSourceDirs"/>
+					</Debugging>
+					<Parameters>
+						<Parameters Name="RunParams"/>
+						<Parameters Name="Launcher"/>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="DebugCWD"/>
+						<Parameters Name="HostApplication">E:\pts2\trunk\Bin\Trading Server\BHTrdSvr2.exe</Parameters>
+						<Parameters Name="RemoteHost"/>
+						<Parameters Name="RemotePath"/>
+						<Parameters Name="RemoteParams"/>
+						<Parameters Name="RemoteLauncher"/>
+						<Parameters Name="UseRemoteLauncher">False</Parameters>
+						<Parameters Name="RemoteCWD"/>
+						<Parameters Name="RemoteDebug">False</Parameters>
+						<Parameters Name="Debug Symbols Search Path"/>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<Excluded_Packages>
+						<Excluded_Packages Name="F:\Users\Public\Documents\RAD Studio\7.0\Bpl\bhctrl.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\Bin\dclib140.bpl">Embarcadero InterBase Express Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclIntraweb_100_140.bpl">VCL for the Web 10.0  Design Package for CodeGear RAD Studio</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclwebsnap140.bpl">Embarcadero WebSnap Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclsoap140.bpl">Embarcadero SOAP Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\bcboffice2k140.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\bcbofficexp140.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k140.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclofficexp140.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclribbon140.bpl">Embarcadero Ribbon Controls</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dcltee8140.bpl">TeeChart Standard 8 Components</Excluded_Packages>
+					</Excluded_Packages>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+				</CPlusPlusBuilder.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

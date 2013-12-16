@@ -1,0 +1,124 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0066053b-f0e5-4dcf-8693-e484cb2eb587}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="..\Utility\HQPoolManager2\HQPoolManager.cbproj" />
+    <Projects Include="DDAboss\PTrdDDABS.cbproj" />
+    <Projects Include="GTJAJZX\PTrdGTJAJZX.cbproj" />
+    <Projects Include="HSFutrue\PTrdHSF.cbproj" />
+    <Projects Include="JSDFuture\PTrdJSDF.cbproj" />
+    <Projects Include="RmTrdSvr\PTrdTrdSvr.cbproj" />
+    <Projects Include="TestTrade\PTrdTest.cbproj" />
+    <Projects Include="test\testtrd.cbproj" />
+    <Projects Include="TrdDll_rm\PTrdDll_RM.cbproj" />
+    <Projects Include="TrdSvr\BHTrdSvr.cbproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="PTrdGTJAJZX">
+    <MSBuild Projects="GTJAJZX\PTrdGTJAJZX.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdGTJAJZX:Clean">
+    <MSBuild Projects="GTJAJZX\PTrdGTJAJZX.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdGTJAJZX:Make">
+    <MSBuild Projects="GTJAJZX\PTrdGTJAJZX.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="BHTrdSvr">
+    <MSBuild Projects="TrdSvr\BHTrdSvr.cbproj" Targets="" />
+  </Target>
+  <Target Name="BHTrdSvr:Clean">
+    <MSBuild Projects="TrdSvr\BHTrdSvr.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="BHTrdSvr:Make">
+    <MSBuild Projects="TrdSvr\BHTrdSvr.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="PTrdDll_RM">
+    <MSBuild Projects="TrdDll_rm\PTrdDll_RM.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdDll_RM:Clean">
+    <MSBuild Projects="TrdDll_rm\PTrdDll_RM.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdDll_RM:Make">
+    <MSBuild Projects="TrdDll_rm\PTrdDll_RM.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="testtrd">
+    <MSBuild Projects="test\testtrd.cbproj" Targets="" />
+  </Target>
+  <Target Name="testtrd:Clean">
+    <MSBuild Projects="test\testtrd.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="testtrd:Make">
+    <MSBuild Projects="test\testtrd.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="PTrdHSF">
+    <MSBuild Projects="HSFutrue\PTrdHSF.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdHSF:Clean">
+    <MSBuild Projects="HSFutrue\PTrdHSF.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdHSF:Make">
+    <MSBuild Projects="HSFutrue\PTrdHSF.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="PTrdTest">
+    <MSBuild Projects="TestTrade\PTrdTest.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdTest:Clean">
+    <MSBuild Projects="TestTrade\PTrdTest.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdTest:Make">
+    <MSBuild Projects="TestTrade\PTrdTest.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="PTrdDDABS">
+    <MSBuild Projects="DDAboss\PTrdDDABS.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdDDABS:Clean">
+    <MSBuild Projects="DDAboss\PTrdDDABS.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdDDABS:Make">
+    <MSBuild Projects="DDAboss\PTrdDDABS.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="PTrdTrdSvr">
+    <MSBuild Projects="RmTrdSvr\PTrdTrdSvr.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdTrdSvr:Clean">
+    <MSBuild Projects="RmTrdSvr\PTrdTrdSvr.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdTrdSvr:Make">
+    <MSBuild Projects="RmTrdSvr\PTrdTrdSvr.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="PTrdJSDF">
+    <MSBuild Projects="JSDFuture\PTrdJSDF.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdJSDF:Clean">
+    <MSBuild Projects="JSDFuture\PTrdJSDF.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdJSDF:Make">
+    <MSBuild Projects="JSDFuture\PTrdJSDF.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="HQPoolManager">
+    <MSBuild Projects="..\Utility\HQPoolManager2\HQPoolManager.cbproj" Targets="" />
+  </Target>
+  <Target Name="HQPoolManager:Clean">
+    <MSBuild Projects="..\Utility\HQPoolManager2\HQPoolManager.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="HQPoolManager:Make">
+    <MSBuild Projects="..\Utility\HQPoolManager2\HQPoolManager.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="PTrdGTJAJZX;BHTrdSvr;PTrdDll_RM;testtrd;PTrdHSF;PTrdTest;PTrdDDABS;PTrdTrdSvr;PTrdJSDF;HQPoolManager" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="PTrdGTJAJZX:Clean;BHTrdSvr:Clean;PTrdDll_RM:Clean;testtrd:Clean;PTrdHSF:Clean;PTrdTest:Clean;PTrdDDABS:Clean;PTrdTrdSvr:Clean;PTrdJSDF:Clean;HQPoolManager:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="PTrdGTJAJZX:Make;BHTrdSvr:Make;PTrdDll_RM:Make;testtrd:Make;PTrdHSF:Make;PTrdTest:Make;PTrdDDABS:Make;PTrdTrdSvr:Make;PTrdJSDF:Make;HQPoolManager:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

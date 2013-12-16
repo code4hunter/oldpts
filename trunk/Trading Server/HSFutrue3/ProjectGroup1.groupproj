@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{47A9103F-7D18-4E6B-83FA-A551500D117A}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="PTrdHSF3.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="test.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="PTrdHSF3">
+			<MSBuild Projects="PTrdHSF3.cbproj"/>
+		</Target>
+		<Target Name="PTrdHSF3:Clean">
+			<MSBuild Targets="Clean" Projects="PTrdHSF3.cbproj"/>
+		</Target>
+		<Target Name="PTrdHSF3:Make">
+			<MSBuild Targets="Make" Projects="PTrdHSF3.cbproj"/>
+		</Target>
+		<Target Name="test">
+			<MSBuild Projects="test.cbproj"/>
+		</Target>
+		<Target Name="test:Clean">
+			<MSBuild Targets="Clean" Projects="test.cbproj"/>
+		</Target>
+		<Target Name="test:Make">
+			<MSBuild Targets="Make" Projects="test.cbproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="PTrdHSF3;test"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="PTrdHSF3:Clean;test:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="PTrdHSF3:Make;test:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

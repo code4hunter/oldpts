@@ -1,0 +1,10 @@
+请求：
+GXFIXSTD00000178151FUNCIDg_serveridg_funcidg_operidg_operpwdg_operwayg_stationaddrg_checksnocustidfundidorgidmarketsecuidcountposstr440207844020703300991000023300
+
+说明：
+证券的440207功能
+证券中g_serveridg_funcidg_operidg_operpwdg_operwayg_stationaddrg_checksno为必须字段。
+
+
+应答：
+GXFIXSTD0000025251FUNCIDRESULTSIZESESSIONIDRETCODERETMESSAGE44020720证券帐户查询成功72poststrcustidmarketsecuidnamesecuseqregflag000000000013082391433009910000200130823914custname00100000000A7413147743300991000021A741314774custname02

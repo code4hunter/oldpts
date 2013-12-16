@@ -1,0 +1,8 @@
+demo.exe:demo.obj
+	cl demo.obj /link ../Lib/Win32/t2sdk.lib
+
+demo.obj:demo.cpp
+	cl -MD -c demo.cpp
+
+clean:
+	del demo.exe demo.obj

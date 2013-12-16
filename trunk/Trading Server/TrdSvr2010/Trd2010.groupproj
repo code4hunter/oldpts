@@ -1,0 +1,72 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{87F92C43-C1D2-4B49-A0EB-6E3BB5934DE5}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="BHTrdSvr2010.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\JSDV8\PTrdJSDV8.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\IB962\PTrdIB962.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\PTrdSFE120\PTrdSFE120.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="BHTrdSvr2010">
+			<MSBuild Projects="BHTrdSvr2010.cbproj"/>
+		</Target>
+		<Target Name="BHTrdSvr2010:Clean">
+			<MSBuild Targets="Clean" Projects="BHTrdSvr2010.cbproj"/>
+		</Target>
+		<Target Name="BHTrdSvr2010:Make">
+			<MSBuild Targets="Make" Projects="BHTrdSvr2010.cbproj"/>
+		</Target>
+		<Target Name="PTrdJSDV8">
+			<MSBuild Projects="..\JSDV8\PTrdJSDV8.cbproj"/>
+		</Target>
+		<Target Name="PTrdJSDV8:Clean">
+			<MSBuild Targets="Clean" Projects="..\JSDV8\PTrdJSDV8.cbproj"/>
+		</Target>
+		<Target Name="PTrdJSDV8:Make">
+			<MSBuild Targets="Make" Projects="..\JSDV8\PTrdJSDV8.cbproj"/>
+		</Target>
+		<Target Name="PTrdIB962">
+			<MSBuild Projects="..\IB962\PTrdIB962.cbproj"/>
+		</Target>
+		<Target Name="PTrdIB962:Clean">
+			<MSBuild Targets="Clean" Projects="..\IB962\PTrdIB962.cbproj"/>
+		</Target>
+		<Target Name="PTrdIB962:Make">
+			<MSBuild Targets="Make" Projects="..\IB962\PTrdIB962.cbproj"/>
+		</Target>
+		<Target Name="PTrdSFE120">
+			<MSBuild Projects="..\PTrdSFE120\PTrdSFE120.cbproj"/>
+		</Target>
+		<Target Name="PTrdSFE120:Clean">
+			<MSBuild Targets="Clean" Projects="..\PTrdSFE120\PTrdSFE120.cbproj"/>
+		</Target>
+		<Target Name="PTrdSFE120:Make">
+			<MSBuild Targets="Make" Projects="..\PTrdSFE120\PTrdSFE120.cbproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="BHTrdSvr2010;PTrdJSDV8;PTrdIB962;PTrdSFE120"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="BHTrdSvr2010:Clean;PTrdJSDV8:Clean;PTrdIB962:Clean;PTrdSFE120:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="BHTrdSvr2010:Make;PTrdJSDV8:Make;PTrdIB962:Make;PTrdSFE120:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

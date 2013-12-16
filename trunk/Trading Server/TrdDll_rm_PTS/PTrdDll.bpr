@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="G:\PTS2_BIN\BHTrdSvr\bin\PTrdDll.dll"/>
+    <OBJFILES value="..\obj\UTrdDllE.obj ..\obj\UTrdCot.obj ..\obj\UTrdCot_Rm.obj 
+      ..\obj\USetup.obj"/>
+    <RESFILES value="PTrdDll.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value="..\..\lib\bohong_trd.lib"/>
+    <LIBRARIES value="vclx.lib dbrtl.lib vcldb.lib inet.lib xmlrtl.lib vcl.lib indy.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib indy.lib vcl.lib xmlrtl.lib inet.lib vcldb.lib dbrtl.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\Trade;..\com"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="NUSESTRING;PTRDDLL"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="PTrdDll.bpf"/>
+    <INCLUDEPATH value="..\..\common\BHCmnBase;$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\..\common\BHCmnBase;$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\..\common\BHCmnBase -I$(BCB)\Projects -I..\..\mylib -I..\Trade 
+      -I..\com -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp 
+      -DNUSESTRING -DPTRDDLL -boa"/>
+    <CFLAG1 value="-WD -O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a1 -6 -b- -k- -vi -tWD 
+      -tWM -c"/>
+    <PFLAGS value="-N2..\obj -N0..\obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I..\obj -D&quot;&quot; -aa -Tpd -x -Gn -Gi"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="PTrdDll.res" FORMNAME="" UNITNAME="PTrdDll.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PTrdDll.bpf" FORMNAME="" UNITNAME="PTrdDll" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UTrdDllE.cpp" FORMNAME="" UNITNAME="UTrdDllE" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Trade\UTrdCot.cpp" FORMNAME="" UNITNAME="UTrdCot.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Trade\UTrdCot_Rm.cpp" FORMNAME="" UNITNAME="UTrdCot_Rm.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\com\USetup.cpp" FORMNAME="" UNITNAME="USetup" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\lib\bohong_trd.lib" FORMNAME="" UNITNAME="bohong_trd.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=9
+Release=0
+Build=14
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=博弘投资
+FileDescription=交易指令接口
+FileVersion=1.9.0.14
+InternalName=PTrdDll.dll
+LegalCopyright=Copyright 2003-2004 Bohong Fund Management Corp.
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.9.0.1
+Comments=
+
+[Excluded Packages]
+D:\bcb\Projects\Bpl\cxLibraryVCLC6.bpl=Express Cross Platform Library (VCL Edition) by Developer Express Inc.
+D:\bcb\Projects\Bpl\dxThemeC6.bpl=Express XP Theme Manager by Developer Express Inc.
+D:\bcb\Projects\Bpl\cxEditorsVCLC6.bpl=ExpressEditors Library 5 (VCL Edition) by Developer Express Inc.
+D:\bcb\Projects\Bpl\cxDataC6.bpl=ExpressDataController by Developer Express Inc.
+D:\bcb\Projects\Bpl\cxExtEditorsVCLC6.bpl=ExpressExtendedEditors Library 5 (VCL Edition) by Developer Express Inc.
+D:\bcb\Projects\Bpl\cxGridVCLC6.bpl=ExpressQuantumGrid 5 (VCL Edition) by Developer Express Inc.
+D:\bcb\Projects\Bpl\cxExportVCLC6.bpl=Express Cross Platform Export Library (VCL Edition) by Developer Express Inc.
+D:\bcb\Projects\Bpl\cxPageControlVCLC6.bpl=Express Cross Platform PageControl (VCL Edition) by Developer Express Inc.
+G:\vcl\TeeChart73\Sources\Compiled\Builder6\System\TeeImage7C6.bpl=TeeChart Pro Graphic Exporting formats
+G:\vcl\TeeChart73\Sources\Compiled\Builder6\Bin\DclTGL7C6.bpl=TeeChart 7 for OpenGL
+G:\vcl\TeeChart73\Sources\Compiled\Builder6\Bin\DclTee7C6.bpl=TeeChart 7 Components
+G:\vcl\TeeChart73\Sources\Compiled\Builder6\Bin\DclTQR7C6.bpl=TeeChart 7 for QuickReport
+G:\vcl\TeeChart73\Sources\Compiled\Builder6\Bin\DclTeePro7C6.bpl=TeeChart Pro 7 Components
+d:\bcb\Bin\dcldss60.bpl=Borland Decision Cube Components
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=..\..\common\BHCmnBase;$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\include;$(BCB)\include\vcl;..\CmnSpecial
+Item3=..\..\mylib;..\Trade;..\com;$(BCB)\include;$(BCB)\include\vcl;..\CmnSpecial
+Item4=..\Trade;..\com;$(BCB)\include;$(BCB)\include\vcl;..\CmnSpecial
+Item5=..\Trade;..\com;..\CmnSpecial;..\CmnSpecial\Trade;$(BCB)\include;$(BCB)\include\vcl
+Item6=..\CmnSpecial;..\CmnSpecial\Trade;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=7
+Item0=..\..\common\BHCmnBase;$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects;..\..\mylib;..\Trade;..\com;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\mylib;..\Trade;..\com;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\Trade;..\com;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\Trade;..\com;..\CmnSpecial;..\CmnSpecial\Trade;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\CmnSpecial;..\CmnSpecial\Trade;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\CmnSpecial;$(BCB)\Projects\Lib;..\CmnSpecial\Trade;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=6
+Item0=NUSESTRING;PTRDDLL
+Item1=NUSESTRING;PTRDDLL;_DEBUG
+Item2=NUSESTRING
+Item3=NUSESTRING;_DEBUG
+Item4=USESTRING
+Item5=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=..\obj
+Item1=..\tmp
+Item2=..\..\tmp
+
+[HistoryLists\hlFinalOutputDir]
+Count=9
+Item0=G:\PTS2_BIN\BHTrdSvr\bin
+Item1=G:\PTS2_BIN\SYNC\SYNCHost\
+Item2=G:\PTS2_BIN\SYNC\SYNCHost
+Item3=..\bin\
+Item4=G:\source\ETFS\bin\
+Item5=G:\source\ETFS\bin
+Item6=..\tmp\
+Item7=..\tmp
+Item8=..\..\..\..\..\Bin\Cats\Bin\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=G:\PTS2_BIN\SYNC\SYNCHost\SyncHost2.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,5 @@
+1：在windows2000以后的系统中安装msmq服务。
+2：注册basecommlnt.dll           -->  regsvr32  basecommlnt.dll
+3：注册RhcommunicateClient.dll   -->  regsvr32  RhcommunicateClient.dll
+3：编辑basecommclnt.ini， 修改client = 本机Ip地址，Server=服务端地址。
+4：enjoy it.

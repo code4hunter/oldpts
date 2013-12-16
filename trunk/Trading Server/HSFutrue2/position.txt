@@ -1,0 +1,3 @@
+00018#0000000002#futu_exch_type#exchange_name#futures_account#contract_code#money_type#entrust_bs#contract_name#begin_amount#enable_amount#real_amount#hold_profit_float#hold_profit#hold_balance#today_open_amount#pre_drop_amount#futu_average_price#futu_last_price#futu_position_str
+                #F4            #金融交易     #207130023052   #IF0809       #0         #1         #IF0809       #0           #1.00         #1.00       #-6900.00         #-6900.00   #268413.00   #1.00             #0              #5263.00000000     #5240.000000    #00F4207130023052000000000000000000000000IF08091
+		#F4#金融交易#207130023052#IF0809#0#2#IF0809#0#2.00#2.00#5700.00#5700.00#535449.00#2.00#1.00#5249.50000000#5240.000000#00F4207130023052000000000000000000000000IF08092#

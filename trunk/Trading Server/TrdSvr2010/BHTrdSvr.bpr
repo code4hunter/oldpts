@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="&quot;..\..\Bin\Trading Server\BHTrdSvr.exe&quot;"/>
+    <OBJFILES value="..\obj\BHTrdSvr.obj ..\obj\UMain.obj ..\obj\server_client.obj 
+      ..\obj\server_socket.obj ..\obj\UTrdItfBase.obj ..\obj\USetup.obj 
+      ..\obj\HsCommX_OCX.obj ..\obj\HsCommX_TLB.obj ..\obj\UnitAbout.obj 
+      ..\obj\UCpio.obj ..\obj\AppSetup.obj ..\obj\DebugStr.obj 
+      ..\obj\sock_client.obj ..\obj\VERSINFO.obj ..\obj\xSystem.obj 
+      ..\obj\UKeepAliveTh.obj ..\obj\uSafeString.obj"/>
+    <RESFILES value="BHTrdSvr.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) UMain.dfm UnitAbout.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dclusr.lib snow.lib indy.lib vclx.lib bcbsmp.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib indy.lib snow.lib dclusr.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      ibxpress.bpi dsnap.bpi cds.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi 
+      dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi bcbsmp.bpi vclie.bpi 
+      xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\Trade;..\com;..\..\common\BHCmnBase;..\..\common\BHCmnBase\mylib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="USECOM;_KD3X;WIN32"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="BHTrdSvr.cpp"/>
+    <INCLUDEPATH value="..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\BHCmnBase\mylib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase"/>
+    <LIBPATH value="..\..\common\BHCmnBase;..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase\mylib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\Trade\jz_mth -I..\com -I..\Trade -I$(BCB)\Projects -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I..\..\common\BHCmnBase\mylib 
+      -I..\..\common\BHCmnBase\mylib\snow -I..\..\common\BHCmnBase -src_suffix 
+      cpp -DUSECOM -D_KD3X -DWIN32 -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -6 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2..\obj -N0..\obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I..\obj -D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="BHTrdSvr.res" FORMNAME="" UNITNAME="BHTrdSvr.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BHTrdSvr.cpp" FORMNAME="" UNITNAME="BHTrdSvr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UMain.cpp" FORMNAME="FrmMain" UNITNAME="UMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="server_client.cpp" FORMNAME="" UNITNAME="server_client.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="server_socket.cpp" FORMNAME="" UNITNAME="server_socket.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Trade\UTrdItfBase.cpp" FORMNAME="" UNITNAME="UTrdItfBase.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\com\USetup.cpp" FORMNAME="" UNITNAME="USetup.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Trade\HsCommX_OCX.cpp" FORMNAME="" UNITNAME="HsCommX_OCX" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Trade\HsCommX_TLB.cpp" FORMNAME="" UNITNAME="HsCommX_TLB.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UnitAbout.cpp" FORMNAME="AboutBox" UNITNAME="UnitAbout" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\UCpio.cpp" FORMNAME="" UNITNAME="UCpio" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\mylib\AppSetup.cpp" FORMNAME="" UNITNAME="AppSetup" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\DebugStr.cpp" FORMNAME="" UNITNAME="DebugStr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\sock_client.cpp" FORMNAME="" UNITNAME="sock_client" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\mylib\VERSINFO.CPP" FORMNAME="" UNITNAME="VERSINFO" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\mylib\xSystem.cpp" FORMNAME="" UNITNAME="xSystem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UKeepAliveTh.cpp" FORMNAME="" UNITNAME="UKeepAliveTh" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\com\uSafeString.cpp" FORMNAME="" UNITNAME="uSafeString" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=3
+MinorVer=0
+Release=0
+Build=3
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=博弘投资
+FileDescription=增加心跳功能,支持获取错误信息
+FileVersion=3.0.0.3
+InternalName=
+LegalCopyright=Copyright 2003-2004 Bohong Fund Management Corp.
+LegalTrademarks=
+OriginalFilename=
+ProductName=交易指令服务器
+ProductVersion=2.5
+Comments=PTS专用
+
+[Excluded Packages]
+d:\bcb\projects\bpl\cxLibraryVCLC6.bpl=Express Cross Platform Library (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\dxThemeC6.bpl=Express XP Theme Manager by Developer Express Inc.
+d:\bcb\projects\bpl\cxEditorsVCLC6.bpl=ExpressEditors Library 5 (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxDataC6.bpl=ExpressDataController by Developer Express Inc.
+d:\bcb\projects\bpl\cxExtEditorsVCLC6.bpl=ExpressExtendedEditors Library 5 (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxGridVCLC6.bpl=ExpressQuantumGrid 5 (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxExportVCLC6.bpl=Express Cross Platform Export Library (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxPageControlVCLC6.bpl=Express Cross Platform PageControl (VCL Edition) by Developer Express Inc.
+d:\bcb\Bin\dcldss60.bpl=Borland Decision Cube Components
+
+[HistoryLists\hlIncludePath]
+Count=16
+Item0=..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\BHCmnBase\mylib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase
+Item1=..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\BHCmnBase\mylib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase\
+Item2=..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\BHCmnBase\mylib;..\..\common\BHCmnBase\mylib\snow
+Item3=..\Trade\jz_mth;..\com;..\Trade;..\mylib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\snow
+Item4=..\Trade\jz_mth;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\snow
+Item5=..\Trade\jz_mth;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\snow
+Item6=..\Trade\jz_mth;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\snow;E:\国泰君安接口
+Item7=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\common\snow
+Item8=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;G:\vcl\sn
+Item9=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item10=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\include;$(BCB)\include\vcl
+Item11=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\include;$(BCB)\include\vcl;..\common\BHCmnBase\comui
+Item12=..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\include;$(BCB)\include\vcl;com
+Item13=com;Trade;..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\include;$(BCB)\include\vcl
+Item14=com;Trade;..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\include;$(BCB)\include\vcl
+Item15=..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=18
+Item0=..\..\common\BHCmnBase;..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase\mylib
+Item1=..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase\mylib
+Item2=..\Trade\jz_mth;..\com;..\Trade;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\BHCmnBase\mylib\snow;..\..\common\BHCmnBase\mylib\
+Item3=..\Trade\jz_mth;..\com;..\Trade;..\mylib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\snow
+Item4=..\Trade\jz_mth;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\snow
+Item5=..\Trade\jz_mth;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\snow;E:\国泰君安接口
+Item6=..\Trade\jz_mth;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\snow
+Item7=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\common\snow
+Item8=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;G:\vcl\sn
+Item9=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item10=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item11=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;com
+Item12=com;..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Trade
+Item13=..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;Trade
+Item14=Trade;..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;com
+Item15=com;Trade;..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;..\com;..\Trade;..\..\common\BHCmnBase\comui;..\..\mylib;..\..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item16=com;Trade;..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item17=..\common\BHCmnBase\comui;..\mylib;..\common\BHCmnBase;$(BCB)\Projects;G:\source\StkTrd;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=14
+Item0=USECOM;_KD3X;WIN32
+Item1=USECOM;_KD3X;WIN32;_DEBUG
+Item2=USECOM;_KD3X;WIN32,KCBPCLI_EXPORTS
+Item3=USECOM;_KD3X;KCBPCLI_EXPORTS
+Item4=USECOM;_KD3X
+Item5=USECOM;_KD3X;_DEBUG
+Item6=USECOM
+Item7=USECOM;_DEBUG
+Item8=USECOM;GTJA
+Item9=USECOM;GTJA;_DEBUG
+Item10=USECOM;GTJA;_DEBUG;_KD3X
+Item11=USECOM;_DEBUG;GTJA
+Item12=_DEBUG;USECOM
+Item13=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=..\obj
+Item1=obj
+Item2=..\obj\
+
+[HistoryLists\hlFinalOutputDir]
+Count=10
+Item0=..\..\Bin\Trading Server\
+Item1=..\..\Bin\Trading Server
+Item2=G:\PTS2_BIN\BHTrdSvr\bin\
+Item3=G:\PTS2_BIN\BHTrdSvr\bin
+Item4=..\bin\
+Item5=G:\source\StkTrd\bin\
+Item6=G:\source\StkTrd\bin
+Item7=..\bin
+Item8=bin\
+Item9=bin
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

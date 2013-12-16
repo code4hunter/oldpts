@@ -1,0 +1,1 @@
+char * Encode(const char *);

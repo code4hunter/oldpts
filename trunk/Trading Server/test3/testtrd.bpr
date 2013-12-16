@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="&quot;..\..\Bin\Trading Server\testtrd.exe&quot;"/>
+    <OBJFILES value="..\obj\testtrd.obj ..\obj\Unit1.obj ..\obj\Unit2.obj ..\obj\UItfTrd.obj"/>
+    <RESFILES value="testtrd.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dclusr.lib dclocx.lib indy.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib indy.lib dclocx.lib dclusr.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\..\common\BHCmnBase"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="NUSESTRING"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="testtrd.cpp"/>
+    <INCLUDEPATH value="..\..\common\BHCmnBase;..\..\..\common\BHCmnBase;$(BCB)\Imports;$(BCB)\include;$(BCB)\include\vcl;..\common\BHCmnBase"/>
+    <LIBPATH value="..\..\common\BHCmnBase;..\..\..\common\BHCmnBase;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\..\common\BHCmnBase -I..\..\..\common\BHCmnBase -I$(BCB)\Imports 
+      -I$(BCB)\include -I$(BCB)\include\vcl -I..\common\BHCmnBase -src_suffix 
+      cpp -DNUSESTRING -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -6 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2..\obj -N0..\obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I..\obj -D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="testtrd.res" FORMNAME="" UNITNAME="testtrd.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="testtrd.cpp" FORMNAME="" UNITNAME="testtrd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\common\BHCmnBase\UItfTrd.cpp" FORMNAME="" UNITNAME="UItfTrd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=5
+Release=0
+Build=5
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=BoHong Fund
+FileDescription=
+FileVersion=2.5.0.5
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+d:\bcb\projects\bpl\cxLibraryVCLC6.bpl=Express Cross Platform Library (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\dxThemeC6.bpl=Express XP Theme Manager by Developer Express Inc.
+d:\bcb\projects\bpl\cxEditorsVCLC6.bpl=ExpressEditors Library 5 (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxDataC6.bpl=ExpressDataController by Developer Express Inc.
+d:\bcb\projects\bpl\cxExtEditorsVCLC6.bpl=ExpressExtendedEditors Library 5 (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxGridVCLC6.bpl=ExpressQuantumGrid 5 (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxExportVCLC6.bpl=Express Cross Platform Export Library (VCL Edition) by Developer Express Inc.
+d:\bcb\projects\bpl\cxPageControlVCLC6.bpl=Express Cross Platform PageControl (VCL Edition) by Developer Express Inc.
+d:\bcb\Bin\dcldss60.bpl=Borland Decision Cube Components
+
+[HistoryLists\hlIncludePath]
+Count=8
+Item0=..\..\common\BHCmnBase;..\..\..\common\BHCmnBase;$(BCB)\Imports;$(BCB)\include;$(BCB)\include\vcl;..\common\BHCmnBase
+Item1=..\..\..\common\BHCmnBase;$(BCB)\Imports;$(BCB)\include;$(BCB)\include\vcl;..\common\BHCmnBase
+Item2=$(BCB)\Imports;$(BCB)\include;$(BCB)\include\vcl;..\common\BHCmnBase
+Item3=$(BCB)\Imports;..\..\..\common\BHCmnBase;..\..\Trade;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\..\..\common\BHCmnBase;..\..\Trade;$(BCB)\include;$(BCB)\include\vcl
+Item5=..\..\Trade;$(BCB)\include;$(BCB)\include\vcl
+Item6=$(BCB)\include;$(BCB)\include\vcl
+Item7=D:\Program Files\Borland\CBuilder6\Projects;N:\cpio2\test;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=8
+Item0=..\..\common\BHCmnBase;..\..\..\common\BHCmnBase;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\..\common\BHCmnBase;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item3=$(BCB)\Projects\Lib;$(BCB)\Imports;..\..\..\common\BHCmnBase;..\..\Trade;$(BCB)\lib\obj;$(BCB)\lib;N:\cpio2\test
+Item4=..\..\..\common\BHCmnBase;..\..\Trade;$(BCB)\lib\obj;$(BCB)\lib;N:\cpio2\test
+Item5=..\..\Trade;$(BCB)\lib\obj;$(BCB)\lib;N:\cpio2\test
+Item6=$(BCB)\lib\obj;$(BCB)\lib;N:\cpio2\test
+Item7=D:\Program Files\Borland\CBuilder6\Projects;N:\cpio2\test;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=6
+Item0=NUSESTRING
+Item1=NUSESTRING;_DEBUG
+Item2=_DEBUG;NUSESTRING
+Item3=_DEBUG;USESTRING
+Item4=_DEBUG,USESTRING
+Item5=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=..\obj
+Item1=..\..\obj
+Item2=..\..\bin
+
+[HistoryLists\hlFinalOutputDir]
+Count=9
+Item0=..\..\Bin\Trading Server
+Item1=..\..\Bin\Sync Server\
+Item2=..\..\Bin\Sync Server
+Item3=G:\PTS2_BIN\BHTrdSvr\bin\
+Item4=G:\PTS2_BIN\BHTrdSvr\bin
+Item5=..\..\bin\
+Item6=..\..\bin
+Item7=..\..\obj\
+Item8=..\..\obj
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,20 @@
+CRC校验，加密解密函数说明
+
+KDGT_CRC(unsigned char* lpinbuf, int nlen, unsigned char *lpoutcrccode);
+lpinbuf:需要生成CRC的字符串
+nlen:需要生成CRC的字符串的长度(8的整数倍)
+lpoutcrccode：生成的CRC串（8个字符）
+
+KDGT_Encrypt(unsigned char *lpszkey, unsigned char* lpinbuf, int nlen, unsigned char *lpoutbuf);
+lpszkey：密钥
+lpinbuf：需要加密的字符串
+nlen：需要加密的字符串长度(8的整数倍)
+lpoutbuf：生成的加密串（长度：2*nlen）
+
+KDGT_Decrypt(unsigned char *lpszkey, unsigned char* lpinbuf, int nlen, unsigned char *lpoutbuf);
+lpszkey：密钥
+lpinbuf：需要解密的字符串
+nlen：需要解密的字符串长度(8的整数倍)
+lpoutbuf：生成的解密串（长度：(1/2)*nlen）
+
+密钥是能够配置的，实际使用中再提供

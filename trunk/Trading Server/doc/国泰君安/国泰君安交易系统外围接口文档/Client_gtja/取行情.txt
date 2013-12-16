@@ -1,0 +1,4 @@
+调用取行情功能400400前，需要执行以下语句才能成功
+int nLevel = 0;
+KCBPCLI_SetOption (hHandleKCBPCli, KCBP_OPTION_CRYPT, &nLevel );
+KCBPCLI_SetOption (hHandleKCBPCli, KCBP_OPTION_COMPRESS, &nLevel );

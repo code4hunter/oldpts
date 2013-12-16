@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{890b0048-3cc7-4ad0-a2de-dc43e598f73d}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="test\testtrd.cbproj" />
+    <Projects Include="TrdDll_rm_PTS\PTrdDll.cbproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="PTrdDll">
+    <MSBuild Projects="TrdDll_rm_PTS\PTrdDll.cbproj" Targets="" />
+  </Target>
+  <Target Name="PTrdDll:Clean">
+    <MSBuild Projects="TrdDll_rm_PTS\PTrdDll.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="PTrdDll:Make">
+    <MSBuild Projects="TrdDll_rm_PTS\PTrdDll.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="testtrd">
+    <MSBuild Projects="test\testtrd.cbproj" Targets="" />
+  </Target>
+  <Target Name="testtrd:Clean">
+    <MSBuild Projects="test\testtrd.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="testtrd:Make">
+    <MSBuild Projects="test\testtrd.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="PTrdDll;testtrd" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="PTrdDll:Clean;testtrd:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="PTrdDll:Make;testtrd:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

@@ -1,0 +1,6 @@
+编写插件注意事项
+
+1)The follows define must be included in condition define setup:
+PTRADEAPI_EXPORTS
+
+2)Turn on Integer-sized enums (-b)

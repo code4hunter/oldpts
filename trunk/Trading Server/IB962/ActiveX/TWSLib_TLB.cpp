@@ -1,0 +1,59 @@
+// ************************************************************************ //
+// WARNING                                                                    
+// -------                                                                    
+// The types declared in this file were generated from data read from a       
+// Type Library. If this type library is explicitly or indirectly (via        
+// another type library referring to this type library) re-imported, or the   
+// 'Refresh' command of the Type Library Editor activated while editing the   
+// Type Library, the contents of this file will be regenerated and all        
+// manual modifications will be lost.                                         
+// ************************************************************************ //
+
+// $Rev: 18756 $
+// File generated on 2010/3/18 15:58:48 from Type Library described below.
+
+// ************************************************************************  //
+// Type Lib: E:\PROGRAM\IB_API_9_62\ActiveX\Tws.ocx (1)
+// LIBID: {0A77CCF5-052C-11D6-B0EC-00B0D074179C}
+// LCID: 0
+// Helpfile: E:\PROGRAM\IB_API_9_62\ActiveX\Tws.hlp
+// HelpString: Tws ActiveX Control module
+// DepndLst: 
+//   (1) v2.0 stdole, (F:\Windows\system32\stdole2.tlb)
+// ************************************************************************ //
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "TWSLib_TLB.h"
+
+#if !defined(__PRAGMA_PACKAGE_SMART_INIT)
+#define      __PRAGMA_PACKAGE_SMART_INIT
+#pragma package(smart_init)
+#endif
+
+namespace Twslib_tlb
+{
+
+
+// *********************************************************************//
+// GUIDS declared in the TypeLibrary                                      
+// *********************************************************************//
+const GUID LIBID_TWSLib = {0x0A77CCF5, 0x052C, 0x11D6,{ 0xB0, 0xEC, 0x00,0xB0, 0xD0, 0x74,0x17, 0x9C} };
+const GUID IID_IComboLeg = {0x573E95CF, 0xF67C, 0x4367,{ 0xA9, 0x5B, 0xCB,0x75, 0x99, 0xBD,0x06, 0x73} };
+const GUID IID_IComboLegList = {0xBE3E5CD3, 0x6F13, 0x4D39,{ 0x98, 0x1C, 0x4F,0x75, 0xC0, 0x63,0xC2, 0xBA} };
+const GUID IID_IUnderComp = {0xE5EE73C4, 0x7D45, 0x428E,{ 0xA3, 0x47, 0x82,0x1C, 0xBF, 0x91,0x8A, 0xA6} };
+const GUID IID_IContract = {0xAE6A66F3, 0x8FA9, 0x4076,{ 0x9C, 0x1F, 0x37,0x28, 0xB1, 0x0A,0x4C, 0xC7} };
+const GUID IID_IContractDetails = {0x64F03988, 0xED93, 0x452E,{ 0x83, 0x0B, 0x34,0x20, 0xDF, 0x21,0xBA, 0xF9} };
+const GUID IID_ITagValue = {0x06FF1D3F, 0xF12F, 0x47D1,{ 0x94, 0x43, 0xA7,0x4D, 0x3C, 0xD5,0x87, 0x23} };
+const GUID IID_ITagValueList = {0xCC48E64E, 0xC1A7, 0x4867,{ 0x87, 0x38, 0x57,0x84, 0x04, 0xD7,0x50, 0x88} };
+const GUID IID_IOrder = {0x25D97F3D, 0x2C4D, 0x4080,{ 0x92, 0x50, 0xD2,0xFB, 0x80, 0x71,0xBE, 0x58} };
+const GUID IID_IOrderState = {0x7B33AE1F, 0x99B0, 0x4BCB,{ 0xA0, 0x24, 0x42,0x33, 0x58, 0x97,0xA6, 0xAF} };
+const GUID IID_IExecution = {0x58BDEC36, 0x791C, 0x4E2E,{ 0x88, 0xA4, 0x6E,0x43, 0x39, 0x39,0x2B, 0x5B} };
+const GUID IID_IExecutionFilter = {0x3553EA07, 0xF281, 0x433D,{ 0xB2, 0xA4, 0x4C,0xB7, 0x22, 0xA9,0x85, 0x9B} };
+const GUID IID_IScannerSubscription = {0x6BBE7E50, 0x795D, 0x4C45,{ 0xA6, 0x9E, 0xE1,0xEE, 0xB7, 0x91,0x8D, 0xD2} };
+const GUID DIID__DTws = {0x0A77CCF6, 0x052C, 0x11D6,{ 0xB0, 0xEC, 0x00,0xB0, 0xD0, 0x74,0x17, 0x9C} };
+const GUID DIID__DTwsEvents = {0x0A77CCF7, 0x052C, 0x11D6,{ 0xB0, 0xEC, 0x00,0xB0, 0xD0, 0x74,0x17, 0x9C} };
+const GUID CLSID_Tws = {0x0A77CCF8, 0x052C, 0x11D6,{ 0xB0, 0xEC, 0x00,0xB0, 0xD0, 0x74,0x17, 0x9C} };
+
+};     // namespace Twslib_tlb

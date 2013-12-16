@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{92D5712F-D38E-476A-8F64-C0464C8E0144}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="JSDV8\PTrdJSDV8.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="HSStkV3.3\PTrdHSStkV33.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SQJSFuture\PTrdSQJSF.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="PTrdJSDV8">
+			<MSBuild Projects="JSDV8\PTrdJSDV8.cbproj"/>
+		</Target>
+		<Target Name="PTrdJSDV8:Clean">
+			<MSBuild Targets="Clean" Projects="JSDV8\PTrdJSDV8.cbproj"/>
+		</Target>
+		<Target Name="PTrdJSDV8:Make">
+			<MSBuild Targets="Make" Projects="JSDV8\PTrdJSDV8.cbproj"/>
+		</Target>
+		<Target Name="PTrdHSStkV33">
+			<MSBuild Projects="HSStkV3.3\PTrdHSStkV33.cbproj"/>
+		</Target>
+		<Target Name="PTrdHSStkV33:Clean">
+			<MSBuild Targets="Clean" Projects="HSStkV3.3\PTrdHSStkV33.cbproj"/>
+		</Target>
+		<Target Name="PTrdHSStkV33:Make">
+			<MSBuild Targets="Make" Projects="HSStkV3.3\PTrdHSStkV33.cbproj"/>
+		</Target>
+		<Target Name="PTrdSQJSF">
+			<MSBuild Projects="SQJSFuture\PTrdSQJSF.cbproj"/>
+		</Target>
+		<Target Name="PTrdSQJSF:Clean">
+			<MSBuild Targets="Clean" Projects="SQJSFuture\PTrdSQJSF.cbproj"/>
+		</Target>
+		<Target Name="PTrdSQJSF:Make">
+			<MSBuild Targets="Make" Projects="SQJSFuture\PTrdSQJSF.cbproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="PTrdJSDV8;PTrdHSStkV33;PTrdSQJSF"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="PTrdJSDV8:Clean;PTrdHSStkV33:Clean;PTrdSQJSF:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="PTrdJSDV8:Make;PTrdHSStkV33:Make;PTrdSQJSF:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

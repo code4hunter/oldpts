@@ -1,0 +1,100 @@
+// Generated .IDL file (by the OLE/COM Object Viewer)
+// 
+// typelib filename: GWStock.tlb
+
+[
+  uuid(72B4FA2E-06C2-4AF7-8E3A-338D733BBE25),
+  version(1.0)
+]
+library GWStock
+{
+    // TLib :     // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("stdole2.tlb");
+
+    // Forward declare all types defined in this typelib
+    dispinterface IPackage;
+
+    [
+      uuid(73B4FA2E-06C2-4AF7-8E3A-338D733BBE25)
+    ]
+    dispinterface IPackage {
+        properties:
+            [id(0x00000001)            
+]
+            short flags;
+            [id(0x00000002)            
+]
+            BSTR opcode;
+            [id(0x00000003)            
+]
+            BSTR serialno;
+        methods:
+            [id(0x00000004)]
+            VARIANT_BOOL SetValueLong(
+                            short RecordNo, 
+                            BSTR DataName, 
+                            long NewValue);
+            [id(0x00000005)]
+            VARIANT_BOOL SetValueString(
+                            short RecordNo, 
+                            BSTR DataName, 
+                            BSTR NewValue);
+            [id(0x00000006)]
+            VARIANT_BOOL SetValueDouble(
+                            short RecordNo, 
+                            BSTR DataName, 
+                            double NewValue);
+            [id(0x00000007)]
+            long GetValueLong(
+                            short RecordNo, 
+                            BSTR DataName);
+            [id(0x00000008)]
+            BSTR GetValueString(
+                            short RecordNo, 
+                            BSTR DataName);
+            [id(0x00000009)]
+            double GetValueDouble(
+                            short RecordNo, 
+                            BSTR DataName);
+            [id(0x0000000a)]
+            VARIANT_BOOL SetValue(
+                            short RecordNo, 
+                            BSTR DataName, 
+                            BSTR NewValue);
+            [id(0x0000000b)]
+            BSTR GetValue(
+                            short RecordNo, 
+                            BSTR DataName);
+            [id(0x0000000c)]
+            BSTR GetDataType(BSTR DataName);
+            [id(0x0000000d)]
+            BSTR GetDataLength(BSTR DataName);
+            [id(0x0000000e)]
+            short CRC16(
+                            BSTR DataBuffer, 
+                            long DataLen);
+            [id(0x0000000f)]
+            VARIANT_BOOL ExchangeMessage();
+            [id(0x00000010)]
+            VARIANT_BOOL SetRecordCount(long lRcdCnt);
+            [id(0x00000011)]
+            long GetRecordCount();
+            [id(0x00000012)]
+            VARIANT_BOOL GetSuccessFlg();
+            [id(0x00000013)]
+            BSTR GetErrId();
+            [id(0x00000014)]
+            BSTR GetErrMsg();
+            [id(0x00000015)]
+            VARIANT_BOOL GetEndFlg();
+            [id(0x00000016)]
+            VARIANT_BOOL SetFunctionCode(BSTR strFunctionCode);
+    };
+
+    [
+      uuid(74B4FA2E-06C2-4AF7-8E3A-338D733BBE25)
+    ]
+    coclass Package {
+        [default] dispinterface IPackage;
+    };
+};

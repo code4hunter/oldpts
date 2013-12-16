@@ -1,0 +1,14 @@
+[basic]
+#操作员id
+optId=10101
+#操作员密码
+optPwd=666666
+#委托方式
+optMode=A0
+#交易所市场代码
+exchId_SH=0
+exchId_SZ=1
+#客户资金帐号
+acctId=2222222
+#客户交易密码
+tradePwd=666666
