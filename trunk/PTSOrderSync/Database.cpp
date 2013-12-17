@@ -228,7 +228,7 @@ Database::orderCanceled(long clordid, const std::string& ordid)
         cmd->CommandType = adCmdStoredProc;
         cmd->Parameters->Append(cmd->CreateParameter(L"@callerid", adInteger, adParamInput, 4));
         cmd->Parameters->Append(cmd->CreateParameter(L"@clordid", adInteger, adParamInput, 4));
-        cmd->Parameters->Append(cmd->CreateParameter(L"@ordid", adVarChar, adParamInput, 16));
+        cmd->Parameters->Append(cmd->CreateParameter(L"@ordid", adVarChar, adParamInput, 256));
         cmd->Parameters->Append(cmd->CreateParameter(L"@text", adVarChar, adParamInput, 256));
         cmd->Parameters->Item[L"@callerid"]->Value = (long)1500;
         cmd->Parameters->Item[L"@clordid"]->Value = (long)clordid;
@@ -265,7 +265,7 @@ Database::confirmOrder(long clordid, const std::string& ordid)
         cmd->CommandType = adCmdStoredProc;
         cmd->Parameters->Append(cmd->CreateParameter(L"@callerid", adInteger, adParamInput, 4));
         cmd->Parameters->Append(cmd->CreateParameter(L"@clordid", adInteger, adParamInput, 4));
-        cmd->Parameters->Append(cmd->CreateParameter(L"@ordid", adVarChar, adParamInput, 16));
+        cmd->Parameters->Append(cmd->CreateParameter(L"@ordid", adVarChar, adParamInput, 256));
         cmd->Parameters->Append(cmd->CreateParameter(L"@text", adVarChar, adParamInput, 256));
         cmd->Parameters->Item[L"@callerid"]->Value = (long)1500;
         cmd->Parameters->Item[L"@clordid"]->Value = (long)clordid;
@@ -337,7 +337,7 @@ Database::fillOrder(const TradeInfo& ti)
         cmd->CommandType = adCmdStoredProc;
         cmd->Parameters->Append(cmd->CreateParameter(L"@brokerid", adInteger, adParamInput, 4));
         cmd->Parameters->Append(cmd->CreateParameter(L"@acctnum", adVarChar, adParamInput, 50));
-        cmd->Parameters->Append(cmd->CreateParameter(L"@ordid", adVarChar, adParamInput, 50));
+        cmd->Parameters->Append(cmd->CreateParameter(L"@ordid", adVarChar, adParamInput, 256));
         cmd->Parameters->Append(cmd->CreateParameter(L"@exeid", adVarChar, adParamInput, 50));
 		cmd->Parameters->Append(cmd->CreateParameter(L"@instid", adVarChar, adParamInput, 20));
 		cmd->Parameters->Append(cmd->CreateParameter(L"@ordtype", adVarChar, adParamInput, 10));
